@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.0</Version>
+  <Author>scott pidzarko</Author>
+ </Creator>
+ <Manufacturer>Lighting Geek</Manufacturer>
+ <Model>Par-177RGBA</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity</Capability>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green Intensity</Capability>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity</Capability>
+ </Channel>
+ <Channel Name="Amber">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Strobe Speed</Capability>
+ </Channel>
+ <Channel Name="Multi-Effect Color Switch">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="21">Red No Pulse</Capability>
+  <Capability Min="22" Max="65">Colour Cycle Slow</Capability>
+  <Capability Min="66" Max="109">Colour Cycle Fast</Capability>
+  <Capability Min="110" Max="153">Colour Cycle Slow Pattern 2</Capability>
+  <Capability Min="154" Max="175">Breathing Red</Capability>
+  <Capability Min="176" Max="197">Breathing Green</Capability>
+  <Capability Min="198" Max="219">Breathing Blue</Capability>
+  <Capability Min="220" Max="241">Breathing Amber</Capability>
+  <Capability Min="242" Max="255">Red No Pulse</Capability>
+ </Channel>
+ <Mode Name="General Operating Mode">
+  <Physical>
+   <Bulb Type="LED" Lumens="1500" ColourTemperature="0"/>
+   <Dimensions Weight="1.6" Width="290" Height="300" Depth="105"/>
+   <Lens Name="Other" DegreesMin="30" DegreesMax="30"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="32" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
+  <Channel Number="3">Amber</Channel>
+  <Channel Number="4">Strobe</Channel>
+  <Channel Number="5">Multi-Effect Color Switch</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+ </Mode>
+</FixtureDefinition>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.0</Version>
+  <Author>scott pidzarko</Author>
+ </Creator>
+ <Manufacturer>Lighting Geek</Manufacturer>
+ <Model>LG-CX-BARL-2408</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Red Intensity (all sections)">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity in 6- or 4 - channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity (all sections)">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green Intensity in 6- or 4 - channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity (all sections)">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity in 6- or 4 - channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity (all sections)">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity in 6- or 4 - channel mode</Capability>
+ </Channel>
+ <Channel Name="Strobe ON + Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="0">Strobe OFF</Capability>
+  <Capability Min="1" Max="255">Strobe ON + Speed</Capability>
+ </Channel>
+ <Channel Name="Effect select">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">3 channel mode: OFF</Capability>
+  <Capability Min="5" Max="9">3 channel mode: Red Solid</Capability>
+  <Capability Min="10" Max="14">3 channel mode: Red/Green Solid</Capability>
+  <Capability Min="15" Max="19">3 channel mode: Green Solid</Capability>
+  <Capability Min="20" Max="24">3 channel mode: Green/Blue Solid</Capability>
+  <Capability Min="25" Max="29">3 channel mode: Blue Solid</Capability>
+  <Capability Min="30" Max="34">3 channel mode: Blue/Red Solid</Capability>
+  <Capability Min="35" Max="39">3 channel mode: RGB Solid</Capability>
+  <Capability Min="40" Max="44">3 channel mode: RGBA Solid</Capability>
+  <Capability Min="45" Max="49">3 channel mode: Amber Solid</Capability>
+  <Capability Min="50" Max="59">3 channel mode: RGBA Breathing Colour fade-between 1</Capability>
+  <Capability Min="60" Max="69">3 channel mode: RGBA Breathing Colour fade-between 2</Capability>
+  <Capability Min="70" Max="79">3 channel mode: Colour Swapping back and forth along bar</Capability>
+  <Capability Min="80" Max="89">3 channel mode: Colour Swapping back and forth along bar 2</Capability>
+  <Capability Min="90" Max="99">3 channel mode: Group of coloured &quot;pixels&quot; back + forth along bar [Slow]</Capability>
+  <Capability Min="100" Max="109">3 channel mode: Group of coloured &quot;pixels&quot; back + forth along bar [Fast]</Capability>
+  <Capability Min="110" Max="119">3 channel mode: Single colour travels along bar with &quot;trail&quot;, changes colour each time 1</Capability>
+  <Capability Min="120" Max="129">3 channel mode: Single colour travels along bar with &quot;trail&quot;, changes colour each time 2</Capability>
+  <Capability Min="130" Max="139">3 channel mode: Single colour travels along bar with &quot;trail&quot;, changes colour each time 3</Capability>
+  <Capability Min="140" Max="149">3 channel mode: Single colour travels along bar with &quot;trail&quot;, changes colour each time 4</Capability>
+  <Capability Min="150" Max="159">3 channel mode: Single colour travels along bar with &quot;trail&quot;, changes colour each time 5</Capability>
+  <Capability Min="160" Max="169">3 channel mode: Single colour travels along bar with &quot;trail&quot;, changes colour each time 6</Capability>
+  <Capability Min="170" Max="179">3 channel mode: Single colour travels along bar with &quot;trail&quot;, changes colour each time 7</Capability>
+  <Capability Min="180" Max="189">3 channel mode: Half bar split colour swap chase</Capability>
+  <Capability Min="190" Max="199">3 channel mode: Single colour (simple RGBA only) travels along bar with trail</Capability>
+  <Capability Min="200" Max="209">3 channel mode: Single colour (advanced colours) travels along bar with trail</Capability>
+  <Capability Min="210" Max="219">3 channel mode:</Capability>
+  <Capability Min="220" Max="229">3 channel mode:</Capability>
+  <Capability Min="230" Max="239">3 channel mode:</Capability>
+  <Capability Min="240" Max="255">3 channel mode:</Capability>
+ </Channel>
+ <Channel Name="Effect Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Effect Speed (3 channel mode)</Capability>
+ </Channel>
+ <Channel Name="Fixture Intensity (all sections)">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Fixture Intensity (all sections) 6 channel mode</Capability>
+ </Channel>
+ <Channel Name="Red Intensity Segment 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Red Intensity Segment 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Red Intensity Segment 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Red Intensity Segment 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Red Intensity Segment 5">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Red Intensity Segment 6">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Red Intensity Segment 7">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Red Intensity Segment 8">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity for Segment 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity for Segment 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity for Segment 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity for Segment 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity for Segment 5">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity for Segment 6">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity for Segment 7">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Green Intensity for Segment 8">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity for Segment 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity for Segment 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity for Segment 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity for Segment 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity for Segment 5">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity for Segment 6">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity for Segment 7">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Blue Intensity for Segment 8">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity for Segment 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity for Segment 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity for Segment 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity for Segment 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity for Segment 5">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity for Segment 6">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity for Segment 7">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Channel Name="Amber Intensity for Segment 8">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">Amber Intensity for segment in 32-channel mode</Capability>
+ </Channel>
+ <Mode Name="Normal Operating Mode - 3 DMX Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="1.9" Width="9999" Height="650" Depth="860"/>
+   <Lens Name="Other" DegreesMin="35" DegreesMax="35"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="25" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Effect select</Channel>
+  <Channel Number="1">Effect Speed</Channel>
+  <Channel Number="2">Strobe ON + Speed</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="Normal Operating Mode - 6 DMX Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="1.9" Width="9999" Height="650" Depth="860"/>
+   <Lens Name="Other" DegreesMin="35" DegreesMax="35"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="25" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Red Intensity (all sections)</Channel>
+  <Channel Number="1">Green Intensity (all sections)</Channel>
+  <Channel Number="2">Blue Intensity (all sections)</Channel>
+  <Channel Number="3">Amber Intensity (all sections)</Channel>
+  <Channel Number="4">Fixture Intensity (all sections)</Channel>
+  <Channel Number="5">Strobe ON + Speed</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="Normal Operating Mode - 32 DMX Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="1.9" Width="9999" Height="650" Depth="860"/>
+   <Lens Name="Other" DegreesMin="35" DegreesMax="35"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="25" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Red Intensity Segment 1</Channel>
+  <Channel Number="1">Green Intensity for Segment 1</Channel>
+  <Channel Number="2">Blue Intensity for Segment 1</Channel>
+  <Channel Number="3">Amber Intensity for Segment 1</Channel>
+  <Channel Number="4">Red Intensity Segment 2</Channel>
+  <Channel Number="5">Green Intensity for Segment 2</Channel>
+  <Channel Number="6">Blue Intensity for Segment 2</Channel>
+  <Channel Number="7">Amber Intensity for Segment 2</Channel>
+  <Channel Number="8">Red Intensity Segment 3</Channel>
+  <Channel Number="9">Green Intensity for Segment 3</Channel>
+  <Channel Number="10">Blue Intensity for Segment 3</Channel>
+  <Channel Number="11">Amber Intensity for Segment 3</Channel>
+  <Channel Number="12">Red Intensity Segment 4</Channel>
+  <Channel Number="13">Green Intensity for Segment 4</Channel>
+  <Channel Number="14">Blue Intensity for Segment 4</Channel>
+  <Channel Number="15">Amber Intensity for Segment 4</Channel>
+  <Channel Number="16">Red Intensity Segment 5</Channel>
+  <Channel Number="17">Green Intensity for Segment 5</Channel>
+  <Channel Number="18">Blue Intensity for Segment 5</Channel>
+  <Channel Number="19">Amber Intensity for Segment 5</Channel>
+  <Channel Number="20">Red Intensity Segment 6</Channel>
+  <Channel Number="21">Green Intensity for Segment 6</Channel>
+  <Channel Number="22">Blue Intensity for Segment 6</Channel>
+  <Channel Number="23">Amber Intensity for Segment 6</Channel>
+  <Channel Number="24">Red Intensity Segment 7</Channel>
+  <Channel Number="25">Green Intensity for Segment 7</Channel>
+  <Channel Number="26">Blue Intensity for Segment 7</Channel>
+  <Channel Number="27">Amber Intensity for Segment 7</Channel>
+  <Channel Number="28">Red Intensity Segment 8</Channel>
+  <Channel Number="29">Green Intensity for Segment 8</Channel>
+  <Channel Number="30">Blue Intensity for Segment 8</Channel>
+  <Channel Number="31">Amber Intensity for Segment 8</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+   <Channel>15</Channel>
+   <Channel>16</Channel>
+   <Channel>17</Channel>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+   <Channel>20</Channel>
+   <Channel>21</Channel>
+   <Channel>22</Channel>
+   <Channel>23</Channel>
+   <Channel>24</Channel>
+   <Channel>25</Channel>
+   <Channel>26</Channel>
+   <Channel>27</Channel>
+   <Channel>28</Channel>
+   <Channel>29</Channel>
+   <Channel>30</Channel>
+   <Channel>31</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="Normal Operating Mode - 4 DMX Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="1.9" Width="9999" Height="650" Depth="860"/>
+   <Lens Name="Other" DegreesMin="35" DegreesMax="35"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="25" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Red Intensity (all sections)</Channel>
+  <Channel Number="1">Green Intensity (all sections)</Channel>
+  <Channel Number="2">Blue Intensity (all sections)</Channel>
+  <Channel Number="3">Amber Intensity (all sections)</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+  </Head>
+ </Mode>
+</FixtureDefinition>
