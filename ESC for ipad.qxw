@@ -1,0 +1,3043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.0</Version>
+  <Author>Scott Pidzarko</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>YR</Manufacturer>
+   <Model>B6001Q</Model>
+   <Mode>Standard</Mode>
+   <ID>0</ID>
+   <Name>B6001Q stage left #1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>14</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>YR</Manufacturer>
+   <Model>B6001Q</Model>
+   <Mode>Standard</Mode>
+   <ID>1</ID>
+   <Name>B6001Q stage right #1</Name>
+   <Universe>0</Universe>
+   <Address>127</Address>
+   <Channels>14</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>YR</Manufacturer>
+   <Model>W1004H</Model>
+   <Mode>Normal Operating mode</Mode>
+   <ID>2</ID>
+   <Name>W1004H stage left #1</Name>
+   <Universe>0</Universe>
+   <Address>28</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>YR</Manufacturer>
+   <Model>W1004H</Model>
+   <Mode>Normal Operating mode</Mode>
+   <ID>3</ID>
+   <Name>W1004H stage right #1</Name>
+   <Universe>0</Universe>
+   <Address>155</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Lighting Geek</Manufacturer>
+   <Model>Par-177RGBA</Model>
+   <Mode>General Operating Mode</Mode>
+   <ID>4</ID>
+   <Name>Par-177RGBA Stage left #1</Name>
+   <Universe>0</Universe>
+   <Address>58</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Lighting Geek</Manufacturer>
+   <Model>Par-177RGBA</Model>
+   <Mode>General Operating Mode</Mode>
+   <ID>5</ID>
+   <Name>Par-177RGBA Stage Right #1</Name>
+   <Universe>0</Universe>
+   <Address>64</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Lighting Geek</Manufacturer>
+   <Model>DX-WIZ-M</Model>
+   <Mode> DMX Mode (Standard Operating Mode)</Mode>
+   <ID>6</ID>
+   <Name>DX-WIZ-M</Name>
+   <Universe>0</Universe>
+   <Address>70</Address>
+   <Channels>9</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Lighting Geek</Manufacturer>
+   <Model>LG-CX-BARL-2408</Model>
+   <Mode>Normal Operating Mode - 3 DMX Channel</Mode>
+   <ID>7</ID>
+   <Name>LG-CX-BARL-2408</Name>
+   <Universe>0</Universe>
+   <Address>79</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Moving Heads</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="0">0</Head>
+   <Head X="1" Y="0" Fixture="1">0</Head>
+   <Head X="0" Y="1" Fixture="2">0</Head>
+   <Head X="1" Y="1" Fixture="3">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="1">
+   <Name>Washes</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="4">0</Head>
+   <Head X="1" Y="0" Fixture="5">0</Head>
+  </FixtureGroup>
+  <Function ID="0" Type="EFX" Name="Synchronous Moving head Clockwise Circle pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>36</Width>
+   <Height>16</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>45</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="1" Type="EFX" Name="Synchronous Gentle Colour Cycle - Moving heads" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="2" Type="Scene" Name="Point at random points in space 2  B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,97,1,188</FixtureVal>
+   <FixtureVal ID="1">0,107,1,236</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Scene" Name="Point at random points in space 3 B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,231,1,255,5,242,6,242</FixtureVal>
+   <FixtureVal ID="1">0,95,1,218</FixtureVal>
+  </Function>
+  <Function ID="4" Type="Scene" Name="Crowd fanout - hitting middle of crowd B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,45,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,168,1,45,2,0,3,0,4,0</FixtureVal>
+  </Function>
+  <Function ID="5" Type="Scene" Name="Point at random points in space 1 B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,176,1,42</FixtureVal>
+   <FixtureVal ID="1">0,95,1,250</FixtureVal>
+  </Function>
+  <Function ID="6" Type="Scene" Name="Flash amber R par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,255,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="7" Type="Scene" Name="Point at dj  B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,160,1,99</FixtureVal>
+   <FixtureVal ID="1">0,98,1,168</FixtureVal>
+  </Function>
+  <Function ID="8" Type="Scene" Name="Crowd fanout - hitting back B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,3,1,37,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,164,1,40,2,0,3,0,4,0</FixtureVal>
+  </Function>
+  <Function ID="9" Type="Scene" Name="Crowd fanout - hitting edge of stage B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,61,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,167,1,61,2,0,3,0,4,0</FixtureVal>
+  </Function>
+  <Function ID="10" Type="Scene" Name="Crowd fanout - hitting middle of crowd (V form) B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,11,1,55,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,159,1,51,2,0,3,0,4,0</FixtureVal>
+  </Function>
+  <Function ID="11" Type="Scene" Name="Crowd fanout - hitting back W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,6,1,55,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,150,1,42,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="12" Type="Scene" Name="Crowd fanout - hitting edge of stage W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,5,1,65,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,157,1,65,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="13" Type="Scene" Name="Crowd fanout - hitting middle of crowd W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,5,1,54,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,157,1,49,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="14" Type="Scene" Name="Crowd fanout - hitting middle of crowd (V form) W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,147,1,54,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,173,1,56,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="15" Type="Chaser" Name="Moving head random strobe one at a time">
+   <Speed FadeIn="0" FadeOut="0" Duration="250"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">118</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">117</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">119</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">111</Step>
+  </Function>
+  <Function ID="16" Type="Scene" Name="Moving heads W1004H Blue/Blue" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,8,255</FixtureVal>
+   <FixtureVal ID="3">5,255,8,255</FixtureVal>
+  </Function>
+  <Function ID="17" Type="Chaser" Name="Crowd fanout front -&gt; back">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">9</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">12</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">4</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">13</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">8</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">11</Step>
+  </Function>
+  <Function ID="18" Type="Scene" Name="Moving heads W1004H Green/Green" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,7,253</FixtureVal>
+   <FixtureVal ID="3">5,255,7,253</FixtureVal>
+  </Function>
+  <Function ID="19" Type="Chaser" Name="Crowd fanout back -&gt; front">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Backward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">9</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">12</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">4</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">13</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">8</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">11</Step>
+  </Function>
+  <Function ID="20" Type="Scene" Name="Moving heads B6001Q Red/Red" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,255</FixtureVal>
+   <FixtureVal ID="1">5,254,6,255</FixtureVal>
+  </Function>
+  <Function ID="21" Type="Scene" Name="Moving heads B6001Q Blue/Blue" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,252,8,250</FixtureVal>
+   <FixtureVal ID="1">5,252,8,250</FixtureVal>
+  </Function>
+  <Function ID="22" Type="Scene" Name="Moving heads W1004H Red/Red" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,255</FixtureVal>
+   <FixtureVal ID="3">5,255,6,255</FixtureVal>
+  </Function>
+  <Function ID="23" Type="Scene" Name="Moving heads B6001Q Green/Green" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,252,7,253</FixtureVal>
+   <FixtureVal ID="0">5,255,7,253</FixtureVal>
+  </Function>
+  <Function ID="24" Type="Scene" Name="Flash Green all pars" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,0,1,255,2,0,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,255,2,0,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="25" Type="Collection" Name="Flash all fixtures green">
+   <Step Number="0">23</Step>
+   <Step Number="1">24</Step>
+   <Step Number="2">18</Step>
+  </Function>
+  <Function ID="26" Type="Scene" Name="Flash red all pars" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,255,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="27" Type="Scene" Name="Flash blue all pars" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,0,1,0,2,255,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,255,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="28" Type="Scene" Name="Flash amber all pars" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,254,4,0,5,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,255,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Collection" Name="Flash all fixtures blue">
+   <Step Number="0">21</Step>
+   <Step Number="1">27</Step>
+   <Step Number="2">16</Step>
+  </Function>
+  <Function ID="30" Type="Collection" Name="Flash all fixtures red">
+   <Step Number="0">20</Step>
+   <Step Number="1">26</Step>
+   <Step Number="2">22</Step>
+  </Function>
+  <Function ID="31" Type="EFX" Name="Synchronous Fast Colour Cycle - Moving heads" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="32" Type="EFX" Name="Synchronous Moderate Colour Cycle - Moving heads" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="10000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="33" Type="EFX" Name="Asynchronous Fast Colour Cycle - Moving heads 25% offset" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>25</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>25</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="34" Type="EFX" Name="Asynchronous Gentle Colour Cycle - Moving heads 25% offset" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>25</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>25</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="35" Type="EFX" Name="Asynchronous Moderate Colour Cycle - Moving heads 25% offset" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>25</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>25</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="36" Type="EFX" Name="Asynchronous Fast Colour Cycle - Moving heads 50% offset" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="37" Type="EFX" Name="Asynchronous Gentle Colour Cycle - Moving heads 50% offset" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="38" Type="EFX" Name="Asynchronous Moderate Colour Cycle - Moving heads 50% offset" Path="Colour cycles">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>2</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>50</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="39" Type="Chaser" Name="Moving Head Colour Cycle Autopilot">
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">38</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">38</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">1</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">32</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">34</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">37</Step>
+  </Function>
+  <Function ID="40" Type="Scene" Name="Flash blue R par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,0,1,0,2,255,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="41" Type="EFX" Name="Halfway Group of two Asynchronous Moving head AntiClockwise Circle pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Backward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>36</Width>
+   <Height>16</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>45</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="42" Type="EFX" Name="Halfway Group of two Asynchronous Moving head Clockwise Circle pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>36</Width>
+   <Height>16</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>45</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="43" Type="EFX" Name="Halfway No group Asynchronous Moving head Anticlockwise Circle pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>45</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>135</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Backward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>36</Width>
+   <Height>16</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>45</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="44" Type="EFX" Name="Halfway No group Asynchronous Moving head Clockwise Circle pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>45</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>135</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>36</Width>
+   <Height>16</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>45</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="45" Type="Scene" Name="Point at dj  W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,146,1,107</FixtureVal>
+   <FixtureVal ID="3">0,91,1,158</FixtureVal>
+  </Function>
+  <Function ID="46" Type="Scene" Name="Point at random points in space 1 W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,236,1,239</FixtureVal>
+   <FixtureVal ID="3">0,136,1,82</FixtureVal>
+  </Function>
+  <Function ID="47" Type="Scene" Name="Point at random points in space 2 W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,236,1,255</FixtureVal>
+   <FixtureVal ID="3">0,65,1,250</FixtureVal>
+  </Function>
+  <Function ID="48" Type="EFX" Name="Staggered vert. lines 1" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>29</Width>
+   <Height>29</Height>
+   <Rotation>135</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>1</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>42</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="49" Type="Scene" Name="Point at random points in space 3 W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,95,1,255</FixtureVal>
+   <FixtureVal ID="3">0,69,1,192</FixtureVal>
+  </Function>
+  <Function ID="50" Type="Collection" Name="Crowd fanout - hitting back">
+   <Step Number="0">8</Step>
+   <Step Number="1">11</Step>
+  </Function>
+  <Function ID="51" Type="EFX" Name="Staggered vert. lines 2" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>29</Width>
+   <Height>29</Height>
+   <Rotation>135</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>1</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>42</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="52" Type="Collection" Name="Crowd fanout - hitting edge of stage">
+   <Step Number="0">9</Step>
+   <Step Number="1">12</Step>
+  </Function>
+  <Function ID="53" Type="EFX" Name="Staggered vert. lines 3" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>29</Width>
+   <Height>29</Height>
+   <Rotation>135</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>1</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>42</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="54" Type="EFX" Name="Staggered vert. lines 4 " Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>29</Width>
+   <Height>29</Height>
+   <Rotation>135</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>1</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>42</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="55" Type="EFX" Name="Staggered horz. lines 1" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>26</Width>
+   <Height>26</Height>
+   <Rotation>45</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>165</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>39</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="56" Type="EFX" Name="Staggered horz. lines 2" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>26</Width>
+   <Height>26</Height>
+   <Rotation>45</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>165</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>39</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="57" Type="EFX" Name="Staggered horz. lines 3" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>26</Width>
+   <Height>26</Height>
+   <Rotation>45</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>165</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>39</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="58" Type="EFX" Name="Staggered horz. lines 4" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>26</Width>
+   <Height>26</Height>
+   <Rotation>45</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>165</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>39</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="59" Type="Scene" Name="Crowd fanout - hitting middle of crowd (outer V form) B6001Q" Path="B6001Q/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,145,1,57,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,194,1,65,2,0,3,0,4,0</FixtureVal>
+  </Function>
+  <Function ID="60" Type="Scene" Name="Flash Green R par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,0,1,255,2,0,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="61" Type="EFX" Name="Synchronous Moving head Clockwise Leaf pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Leaf</Algorithm>
+   <Width>36</Width>
+   <Height>25</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>45</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="62" Type="EFX" Name="Synchronous Moving head Clockwise Diamond pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Diamond</Algorithm>
+   <Width>36</Width>
+   <Height>25</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>29</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="63" Type="EFX" Name="Synchronous Moving head Clockwise Square pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Square</Algorithm>
+   <Width>36</Width>
+   <Height>17</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>44</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="64" Type="EFX" Name="Synchronous Moving head Clockwise 8 pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Eight</Algorithm>
+   <Width>36</Width>
+   <Height>21</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>63</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="65" Type="EFX" Name="Synchronous Moving head Clockwise Lissajous pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>36</Width>
+   <Height>29</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>45</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="66" Type="EFX" Name="Synchronous Moving head Clockwise Squarechoppy pattern" Path="Movement patterns">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>5</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="13490"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>SquareChoppy</Algorithm>
+   <Width>36</Width>
+   <Height>17</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>170</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>44</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="67" Type="Scene" Name="Flash red R par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,255,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="68" Type="Scene" Name="Flash amber L par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,254,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="69" Type="Scene" Name="Flash blue L par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,0,1,0,2,255,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="70" Type="Scene" Name="Flash Green L par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,0,1,255,2,0,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,255,2,0,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="71" Type="Scene" Name="Flash red L par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,255,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="72" Type="Scene" Name="Crowd fanout - hitting middle of crowd (outer V form) W1004H" Path="W1004H/Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,180,1,54,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,152,1,56,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="73" Type="Collection" Name="Crowd fanout - hitting middle of crowd (V form)">
+   <Step Number="0">10</Step>
+   <Step Number="1">14</Step>
+  </Function>
+  <Function ID="74" Type="Collection" Name="Crowd fanout - hitting middle of crowd">
+   <Step Number="0">13</Step>
+   <Step Number="1">4</Step>
+  </Function>
+  <Function ID="75" Type="Collection" Name="Crowd fanout - hitting middle of crowd (outer V form)">
+   <Step Number="0">59</Step>
+   <Step Number="1">72</Step>
+  </Function>
+  <Function ID="76" Type="Collection" Name="Point @ DJ">
+   <Step Number="0">45</Step>
+   <Step Number="1">7</Step>
+  </Function>
+  <Function ID="77" Type="Collection" Name="Random points in space 1">
+   <Step Number="0">5</Step>
+   <Step Number="1">46</Step>
+  </Function>
+  <Function ID="78" Type="Collection" Name="Random points in space 2">
+   <Step Number="0">2</Step>
+   <Step Number="1">47</Step>
+  </Function>
+  <Function ID="79" Type="Collection" Name="Random points in space 3">
+   <Step Number="0">3</Step>
+   <Step Number="1">49</Step>
+  </Function>
+  <Function ID="80" Type="Chaser" Name="Moving Head Autopilot">
+   <Speed FadeIn="2" FadeOut="2" Duration="5002"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">63</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">41</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">42</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">43</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">44</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">55</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">64</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">0</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">62</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">61</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">48</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">53</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">57</Step>
+  </Function>
+  <Function ID="81" Type="Collection" Name="AUTOPILOT">
+   <Step Number="0">80</Step>
+   <Step Number="1">39</Step>
+  </Function>
+  <Function ID="82" Type="Chaser" Name="Moving head +  par random colour spam">
+   <Speed FadeIn="0" FadeOut="0" Duration="100"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="20">21</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">85</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">89</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">88</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">86</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">23</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">90</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">84</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">94</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">93</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">117</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">92</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">87</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">83</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">91</Step>
+   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">20</Step>
+   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0">116</Step>
+   <Step Number="17" FadeIn="0" Hold="0" FadeOut="0">108</Step>
+   <Step Number="18" FadeIn="0" Hold="0" FadeOut="0">109</Step>
+   <Step Number="19" FadeIn="0" Hold="0" FadeOut="0">110</Step>
+   <Step Number="20" FadeIn="0" Hold="0" FadeOut="0">107</Step>
+   <Step Number="21" FadeIn="0" Hold="0" FadeOut="0">97</Step>
+   <Step Number="22" FadeIn="0" Hold="0" FadeOut="0">16</Step>
+   <Step Number="23" FadeIn="0" Hold="0" FadeOut="0">95</Step>
+   <Step Number="24" FadeIn="0" Hold="0" FadeOut="0">98</Step>
+   <Step Number="25" FadeIn="0" Hold="0" FadeOut="0">96</Step>
+   <Step Number="26" FadeIn="0" Hold="0" FadeOut="0">105</Step>
+   <Step Number="27" FadeIn="0" Hold="0" FadeOut="0">104</Step>
+   <Step Number="28" FadeIn="0" Hold="0" FadeOut="0">18</Step>
+   <Step Number="29" FadeIn="0" Hold="0" FadeOut="0">106</Step>
+   <Step Number="30" FadeIn="0" Hold="0" FadeOut="0">103</Step>
+   <Step Number="31" FadeIn="0" Hold="0" FadeOut="0">115</Step>
+   <Step Number="32" FadeIn="0" Hold="0" FadeOut="0">114</Step>
+   <Step Number="33" FadeIn="0" Hold="0" FadeOut="0">113</Step>
+   <Step Number="34" FadeIn="0" Hold="0" FadeOut="0">111</Step>
+   <Step Number="35" FadeIn="0" Hold="0" FadeOut="0">112</Step>
+   <Step Number="36" FadeIn="0" Hold="0" FadeOut="0">101</Step>
+   <Step Number="37" FadeIn="0" Hold="0" FadeOut="0">99</Step>
+   <Step Number="38" FadeIn="0" Hold="0" FadeOut="0">100</Step>
+   <Step Number="39" FadeIn="0" Hold="0" FadeOut="0">102</Step>
+   <Step Number="40" FadeIn="0" Hold="0" FadeOut="0">22</Step>
+   <Step Number="41" FadeIn="0" Hold="0" FadeOut="0">28</Step>
+   <Step Number="42" FadeIn="0" Hold="0" FadeOut="0">68</Step>
+   <Step Number="43" FadeIn="0" Hold="0" FadeOut="0">6</Step>
+   <Step Number="44" FadeIn="0" Hold="0" FadeOut="0">27</Step>
+   <Step Number="45" FadeIn="0" Hold="0" FadeOut="0">69</Step>
+   <Step Number="46" FadeIn="0" Hold="0" FadeOut="0">40</Step>
+   <Step Number="47" FadeIn="0" Hold="0" FadeOut="0">24</Step>
+   <Step Number="48" FadeIn="0" Hold="0" FadeOut="0">70</Step>
+   <Step Number="49" FadeIn="0" Hold="0" FadeOut="0">60</Step>
+   <Step Number="50" FadeIn="0" Hold="0" FadeOut="0">26</Step>
+   <Step Number="51" FadeIn="0" Hold="0" FadeOut="0">71</Step>
+   <Step Number="52" FadeIn="0" Hold="0" FadeOut="0">67</Step>
+  </Function>
+  <Function ID="83" Type="Scene" Name="Moving heads B6001Q Red/Green" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,255,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,0,7,255,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="84" Type="Scene" Name="Moving heads B6001Q Green/Red" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,0,7,255,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,255,7,0,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="85" Type="Scene" Name="Moving heads B6001Q Blue/Green" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,0,7,0,8,255,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,0,7,255,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="86" Type="Scene" Name="Moving heads B6001Q Green/Blue" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,0,7,255,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,0,7,0,8,255,9,0</FixtureVal>
+  </Function>
+  <Function ID="87" Type="Scene" Name="Moving heads B6001Q Red/Blue" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,255,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,0,7,0,8,255,9,0</FixtureVal>
+  </Function>
+  <Function ID="88" Type="Scene" Name="Moving heads B6001Q Blue/Red" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,0,7,0,8,255,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,255,7,0,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="89" Type="Scene" Name="Moving heads B6001Q Blue/Off" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,0,7,0,8,255,9,0</FixtureVal>
+   <FixtureVal ID="1">5,0,6,0,7,0,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="90" Type="Scene" Name="Moving heads B6001Q Green/Off" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,0,7,255,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,0,6,0,7,0,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="91" Type="Scene" Name="Moving heads B6001Q Red/Off" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,6,255,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,0,6,0,7,0,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="92" Type="Scene" Name="Moving heads B6001Q Off/Red" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,0,6,2,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,255,7,0,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="93" Type="Scene" Name="Moving heads B6001Q Off/Green" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,0,6,2,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,0,7,255,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="94" Type="Scene" Name="Moving heads B6001Q Off/Blue" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,0,6,2,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,255,6,0,7,0,8,255,9,0</FixtureVal>
+  </Function>
+  <Function ID="95" Type="Scene" Name="Moving heads W1004H Blue/Green" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,255,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,255,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="96" Type="Scene" Name="Moving heads W1004H Blue/Red" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,255,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,255,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="97" Type="Scene" Name="Moving heads W1004H Blue/Amber" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,255,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,3,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="98" Type="Scene" Name="Moving heads W1004H Blue/Off" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,255,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,0,6,3,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="99" Type="Scene" Name="Moving heads W1004H Red/Blue" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,255,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,0,8,255,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="100" Type="Scene" Name="Moving heads W1004H Red/Green" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,255,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,255,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="101" Type="Scene" Name="Moving heads W1004H Red/Amber" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,255,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="102" Type="Scene" Name="Moving heads W1004H Red/Off" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,255,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="103" Type="Scene" Name="Moving heads W1004H Green/Red" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,255,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,255,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="104" Type="Scene" Name="Moving heads W1004H Green/Blue" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,255,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,0,8,255,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="105" Type="Scene" Name="Moving heads W1004H Green/Amber" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,255,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="106" Type="Scene" Name="Moving heads W1004H Green/Off" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,255,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="107" Type="Scene" Name="Moving heads W1004H Amber/Red" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,255,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="108" Type="Scene" Name="Moving heads W1004H Amber/Blue" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,0,8,255,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="109" Type="Scene" Name="Moving heads W1004H Amber/Green" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,255,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="110" Type="Scene" Name="Moving heads W1004H Amber/Off" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="111" Type="Scene" Name="Moving heads W1004H Off/Off" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="112" Type="Scene" Name="Moving heads W1004H Off/Red" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,255,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="113" Type="Scene" Name="Moving heads W1004H Off/Green" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,255,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="114" Type="Scene" Name="Moving heads W1004H Off/Blue" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,0,8,255,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="115" Type="Scene" Name="Moving heads W1004H Off/Amber" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="116" Type="Scene" Name="Moving heads W1004H Amber/Amber" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+   <FixtureVal ID="3">5,255,6,0,7,0,8,0,9,255,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="117" Type="Scene" Name="Moving heads B6001Q Off/Off" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,0,6,2,7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="1">5,0,6,0,7,0,8,0,9,0</FixtureVal>
+  </Function>
+  <Function ID="118" Type="Scene" Name="Moving Heads B6001Q Strobe White" Path="B6001Q/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,255,10,255</FixtureVal>
+   <FixtureVal ID="1">5,255,10,255</FixtureVal>
+  </Function>
+  <Function ID="119" Type="Scene" Name="Moving heads W1004H Strobe White" Path="W1004H/Colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,255,12,255</FixtureVal>
+   <FixtureVal ID="3">5,255,12,255</FixtureVal>
+  </Function>
+  <Function ID="120" Type="Scene" Name="Flash white all pars" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="5">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="121" Type="Scene" Name="Flash white L par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="122" Type="Scene" Name="Flash white R par" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="123" Type="Scene" Name="Strobe all pars" Path="Par 177">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">4,255</FixtureVal>
+   <FixtureVal ID="5">4,255</FixtureVal>
+  </Function>
+  <Function ID="124" Type="Collection" Name="Strobe all">
+   <Step Number="0">118</Step>
+   <Step Number="1">123</Step>
+   <Step Number="2">119</Step>
+  </Function>
+  <Function ID="125" Type="Collection" Name="Strobe movers">
+   <Step Number="0">118</Step>
+   <Step Number="1">119</Step>
+  </Function>
+  <Function ID="126" Type="Chaser" Name="Moving head random directions sequence">
+   <Speed FadeIn="0" FadeOut="0" Duration="350"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">5</Step>
+   <Step Number="1" FadeIn="0" Hold="350" FadeOut="0">72</Step>
+   <Step Number="2" FadeIn="0" Hold="350" FadeOut="0">4</Step>
+   <Step Number="3" FadeIn="0" Hold="350" FadeOut="0">10</Step>
+   <Step Number="4" FadeIn="0" Hold="350" FadeOut="0">13</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">2</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">3</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">46</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">47</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">49</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">45</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">7</Step>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="1">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="1" Units="0"/>
+   <FxItem ID="0" XPos="109.295" YPos="113.322" Rotation="90"/>
+   <FxItem ID="1" XPos="938.547" YPos="100.559" Rotation="90"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>4282927176</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Slider Caption="EFX Speed" ID="23" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="1275" Y="20" Width="100" Height="185"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None">Submaster</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="128"/>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Chase Speed" ID="25" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="1275" Y="380" Width="100" Height="185"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.SF NS Text,12,-1,5,50,0,0,0,0,0</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None">Submaster</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="102"/>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Colour Speed" ID="26" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="1275" Y="205" Width="100" Height="175"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>.SF NS Text,12,-1,5,50,0,0,0,0,0</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None">Submaster</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="104"/>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Moving head dimmer" ID="28" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="590" Y="220" Width="95" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="83"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="216">
+     <Channel Fixture="0">5</Channel>
+     <Channel Fixture="1">5</Channel>
+     <Channel Fixture="2">5</Channel>
+     <Channel Fixture="3">5</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Moving head speed" ID="41" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="595" Y="5" Width="90" Height="215"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="84"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="172">
+     <Channel Fixture="0">4</Channel>
+     <Channel Fixture="1">4</Channel>
+     <Channel Fixture="2">4</Channel>
+     <Channel Fixture="3">4</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Button Caption="Stop all" ID="63" Icon="">
+    <WindowState Visible="True" X="325" Y="595" Width="95" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4294900991</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>StopAll</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="236"/>
+   </Button>
+   <Button Caption="Medium fadeout" ID="64" Icon="">
+    <WindowState Visible="True" X="220" Y="595" Width="95" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Flash</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="235" LowerValue="35"/>
+   </Button>
+   <Button Caption="" ID="65" Icon="">
+    <WindowState Visible="True" X="10" Y="595" Width="95" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Blackout</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="234" LowerValue="40"/>
+   </Button>
+   <Button Caption="Moving head blackout" ID="66" Icon="">
+    <WindowState Visible="True" X="115" Y="595" Width="95" Height="90"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="233" LowerValue="58"/>
+   </Button>
+   <Button Caption="White strobe bump button" ID="10" Icon="">
+    <WindowState Visible="True" X="595" Y="495" Width="90" Height="70"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Colour Strobe Bump Button" ID="11" Icon="">
+    <WindowState Visible="True" X="595" Y="420" Width="90" Height="75"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <SoloFrame Caption="Autopilots" ID="12">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="10" Y="5" Width="585" Height="145"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Moving Head Autopilot - calm" ID="13" Icon="">
+     <WindowState Visible="True" X="0" Y="40" Width="110" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="80"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Moving Head Autopilot - medium" ID="14" Icon="">
+     <WindowState Visible="True" X="115" Y="40" Width="110" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="80"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Moving Head Autopilot - Intense" ID="15" Icon="">
+     <WindowState Visible="True" X="230" Y="40" Width="110" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>.SF NS Text,13,-1,5,50,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="80"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Moving Head Autopilot     Movement fan special" ID="8" Icon="">
+     <WindowState Visible="True" X="465" Y="40" Width="115" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="80"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Moving Head Autopilot - Strobe Special" ID="9" Icon="">
+     <WindowState Visible="True" X="345" Y="40" Width="115" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="80"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Moving Head Colours - Manual Control" ID="16">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="5" Y="145" Width="590" Height="440"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Heads Flash Red" ID="47" Icon="">
+     <WindowState Visible="True" X="5" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="22"/>
+     <Action>Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="169" LowerValue="13" UpperValue="15"/>
+    </Button>
+    <Button Caption="Heads Flash Green" ID="48" Icon="">
+     <WindowState Visible="True" X="100" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="18"/>
+     <Action>Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="170" LowerValue="200" UpperValue="205"/>
+    </Button>
+    <Button Caption="Head Flash Blue" ID="49" Icon="">
+     <WindowState Visible="True" X="195" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="16"/>
+     <Action>Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="171" LowerValue="50" UpperValue="75"/>
+    </Button>
+    <Button Caption="Heads Flash Amber" ID="50" Icon="">
+     <WindowState Visible="True" X="290" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="172" LowerValue="63"/>
+    </Button>
+    <Button Caption="Heads Flash UV" ID="4" Icon="">
+     <WindowState Visible="True" X="385" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="204"/>
+    </Button>
+    <Button Caption="Heads Flash White" ID="3" Icon="">
+     <WindowState Visible="True" X="480" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="204"/>
+    </Button>
+    <Button Caption="Heads Slow Flash white" ID="5" Icon="">
+     <WindowState Visible="True" X="480" Y="135" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="204"/>
+    </Button>
+    <Button Caption="Heads Slow Flash UV" ID="1" Icon="">
+     <WindowState Visible="True" X="385" Y="135" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="204"/>
+    </Button>
+    <Button Caption="Heads Slow Amber Flash" ID="59" Icon="">
+     <WindowState Visible="True" X="290" Y="135" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="204"/>
+    </Button>
+    <Button Caption="Heads Slow Flash Blue" ID="60" Icon="">
+     <WindowState Visible="True" X="195" Y="135" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Heads Slow Flash Green" ID="61" Icon="">
+     <WindowState Visible="True" X="100" Y="135" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="202" LowerValue="200" UpperValue="205"/>
+    </Button>
+    <Button Caption="Heads Slow Flash Red" ID="62" Icon="">
+     <WindowState Visible="True" X="5" Y="135" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>.SF NS Text,12,-1,5,50,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="201" LowerValue="13" UpperValue="15"/>
+    </Button>
+    <Slider Caption="Moving head Red" ID="46" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="5" Y="230" Width="95" Height="205"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>.SF NS Text,13,-1,5,50,0,0,0,0,0</Font>
+     </Appearance>
+     <Input Universe="0" Channel="77"/>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">6</Channel>
+      <Channel Fixture="1">6</Channel>
+      <Channel Fixture="2">6</Channel>
+      <Channel Fixture="3">6</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Moving head green" ID="45" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="100" Y="230" Width="95" Height="205"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Input Universe="0" Channel="78"/>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">7</Channel>
+      <Channel Fixture="1">7</Channel>
+      <Channel Fixture="2">7</Channel>
+      <Channel Fixture="3">7</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Moving head blue" ID="44" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="195" Y="230" Width="95" Height="205"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Input Universe="0" Channel="79"/>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">8</Channel>
+      <Channel Fixture="1">8</Channel>
+      <Channel Fixture="2">8</Channel>
+      <Channel Fixture="3">8</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Moving head Amber" ID="43" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="290" Y="230" Width="95" Height="205"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Input Universe="0" Channel="80"/>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="2">9</Channel>
+      <Channel Fixture="3">9</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Moving Head UV / Purple" ID="42" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="385" Y="230" Width="95" Height="205"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Input Universe="0" Channel="81"/>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">6</Channel>
+      <Channel Fixture="0">8</Channel>
+      <Channel Fixture="1">6</Channel>
+      <Channel Fixture="1">8</Channel>
+      <Channel Fixture="2">10</Channel>
+      <Channel Fixture="3">10</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Moving Head White" ID="27" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="480" Y="230" Width="95" Height="205"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Input Universe="0" Channel="82"/>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">9</Channel>
+      <Channel Fixture="1">9</Channel>
+      <Channel Fixture="2">11</Channel>
+      <Channel Fixture="3">11</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+   </SoloFrame>
+   <SoloFrame Caption="All light colour picker" ID="31">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="685" Y="460" Width="590" Height="255"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Frame Caption="" ID="32">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="0" Y="40" Width="590" Height="215"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>False</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Red" ID="33" Icon="">
+      <WindowState Visible="True" X="10" Y="10" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Orange" ID="34" Icon="">
+      <WindowState Visible="True" X="105" Y="10" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Yellow" ID="35" Icon="">
+      <WindowState Visible="True" X="200" Y="10" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Amber" ID="36" Icon="">
+      <WindowState Visible="True" X="295" Y="10" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Cyan" ID="37" Icon="">
+      <WindowState Visible="True" X="10" Y="105" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Blue" ID="38" Icon="">
+      <WindowState Visible="True" X="105" Y="105" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Green" ID="39" Icon="">
+      <WindowState Visible="True" X="200" Y="105" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Light Green" ID="40" Icon="">
+      <WindowState Visible="True" X="295" Y="105" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="UV" ID="67" Icon="">
+      <WindowState Visible="True" X="390" Y="10" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Magenta" ID="69" Icon="">
+      <WindowState Visible="True" X="485" Y="10" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="White" ID="70" Icon="">
+      <WindowState Visible="True" X="485" Y="105" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Pink" ID="68" Icon="">
+      <WindowState Visible="True" X="390" Y="105" Width="95" Height="95"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </Frame>
+   </SoloFrame>
+   <SoloFrame Caption="Moving Light Colour Cycle Picker" ID="71">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="685" Y="255" Width="405" Height="205"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Asynchronous Gentle Colour Cycle - Moving heads 50% offset" ID="55" Icon="">
+     <WindowState Visible="True" X="15" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="37"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="220" LowerValue="2"/>
+    </Button>
+    <Button Caption="Asynchronous Fast Colour Cycle - Moving heads 50% offset" ID="54" Icon="">
+     <WindowState Visible="True" X="120" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="36"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="188" LowerValue="2"/>
+    </Button>
+    <Button Caption="Moving Head Colour Cycle Autopilot" ID="2" Icon="">
+     <WindowState Visible="True" X="220" Y="40" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="39"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Moving Light Movement Pattern Picker" ID="72">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="685" Y="5" Width="480" Height="255"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Halfway No group Asynchronous Moving head Clockwise Circle pattern" ID="58" Icon="">
+     <WindowState Visible="True" X="220" Y="150" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="41"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="217" LowerValue="2"/>
+    </Button>
+    <Button Caption="Staggered horz. lines 3" ID="57" Icon="">
+     <WindowState Visible="True" X="20" Y="50" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="57"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="218" LowerValue="2"/>
+    </Button>
+    <Button Caption="Staggered vert. lines" ID="56" Icon="">
+     <WindowState Visible="True" X="120" Y="150" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="48"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="219" LowerValue="2"/>
+    </Button>
+    <Button Caption="Halfway Group of two Asynchronous Moving head AntiClockwise Circle pattern " ID="51" Icon="">
+     <WindowState Visible="True" X="220" Y="50" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="41"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="185" LowerValue="2"/>
+    </Button>
+    <Button Caption="Staggered vert. lines 2" ID="52" Icon="">
+     <WindowState Visible="True" X="120" Y="50" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>.SF NS Text,12,-1,5,50,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="51"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="186" LowerValue="2"/>
+    </Button>
+    <Button Caption="Synchronous Moving head AntiClockwise Circle pattern" ID="53" Icon="">
+     <WindowState Visible="True" X="20" Y="150" Width="95" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="187" LowerValue="2"/>
+    </Button>
+    <Button Caption="Synchronous Moving head Clockwise Circle pattern" ID="73" Icon="">
+     <WindowState Visible="True" X="345" Y="85" Width="120" Height="115"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="42"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+    <Input Universe="0" Channel="13"/>
+   </GrandMaster>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
